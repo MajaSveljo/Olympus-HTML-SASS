@@ -1,0 +1,353 @@
+.background{
+    background-image: -webkit-gradient(linear, left top, left bottom, from($orangeTransparent), to($orangeTransparent)), url(../../images/users-bg.png);
+    background-image: -webkit-linear-gradient($orangeTransparent, $orangeTransparent), url(../../images/users-bg.png);
+    background-image: -o-linear-gradient($orangeTransparent, $orangeTransparent), url(../../images/users-bg.png);
+    background-image: linear-gradient($orangeTransparent, $orangeTransparent), url(../../images/users-bg.png);    
+}
+
+header.authentication{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .logo-main{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-weight: 300;
+        font-size: 0.4rem;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #fff;
+        text-transform: uppercase;
+
+        img{
+            margin-right: 15px;
+            width: 34px;
+            height: 34px;
+        }
+
+        &__text-container{
+            :first-child{
+                font-weight: 700;
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+    .logo-bars{
+        ion-icon{
+            vertical-align: middle;
+            color: #fff;
+        }
+    }
+}
+
+header.authentication, section.authentication-content{
+    width: 300px;
+    margin: 40px auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+section.authentication-content{
+    color: #fff;
+    .welcome{
+        h1{
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        p{
+            font-size: 0.5rem;
+            margin-bottom: 15px;
+        }
+        
+        button{
+            font-size: 0.5rem;
+            font-weight: 400;
+            color: #fff;
+            padding: 10px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .forms{
+        padding: 10px 20px 30px;
+        background-color: #fff;
+        margin-bottom: 40px;
+
+        .tabs{
+            background-color: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 20px; 
+            
+            .tab{
+                width: 50%;
+                text-align: center;
+                color: #ccc;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                padding: 10px 0;
+
+                ion-icon{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .tab-content{
+            h2{
+                color: #000;
+                font-size: 0.5rem;
+                margin-bottom: 30px;
+            }   
+
+            form{
+                color: rgb(145, 145, 145);
+                position: relative;
+
+                .inline-always{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                }
+
+                input, .input-container, button{
+                    margin-bottom: 10px;
+                }
+
+                input:not([type='checkbox']), select{
+                    height: 40px;
+                    width: 100%;
+                    border: none;
+                }
+
+                input::-webkit-input-placeholder, label{
+                    color: rgb(145, 145, 145);
+                    font-family: 'Lato'
+                }
+
+                input:-ms-input-placeholder, label{
+                    color: rgb(145, 145, 145);
+                    font-family: 'Lato'
+                }
+
+                input::-ms-input-placeholder, label{
+                    color: rgb(145, 145, 145);
+                    font-family: 'Lato'
+                }
+
+                input::placeholder, label{
+                    color: rgb(145, 145, 145);
+                    font-family: 'Lato'
+                }
+
+                input, select, option{
+                    color: rgb(82, 82, 82);
+                }
+
+                .input-container{
+                    position: relative;
+                    
+                    label{
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                        font-size: 0.6rem;
+                        font-weight: 400;
+                    }
+                    
+                    span{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 100%;
+                        background-color: #fff;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        ion-icon{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+
+                    select, input[type='date']{
+                        background-color: #fff;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: end;
+                            -ms-flex-align: end;
+                                align-items: flex-end;
+                        margin-bottom: 20px;
+                    }
+    
+                    select{
+                        -webkit-appearance: none;
+                           -moz-appearance: none;
+                                appearance: none;
+                    }
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                        color: transparent;
+                        background: transparent;
+                        z-index: 1;
+                        width: 55%;
+                    }
+                }
+
+                .inline-always{
+                    label, a{
+                        font-size: 0.6rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .checkbox-container{
+                    margin-bottom: 15px;
+
+                    input{
+                        background-color: #fff;
+                        position: relative;
+
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 2px;
+                            background-color: #fff;
+                            border: 1px solid $orange;
+                        }
+                        
+                        &:checked{
+                            &::before{
+                                content: '';
+                                background: url(../../images/_ionicons_svg_md-checkmark.svg);
+                                background-color: #fff;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                        }
+                    }
+
+                    label{
+                        font-size: 0.6rem;
+                        font-weight: 400;
+                        padding-left: 5px;
+
+                        a{
+                            display: block;
+                            color: $orange;
+                        }
+                    }
+                }
+
+                .inline-always{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -ms-flex-line-pack: center;
+                        align-content: center;
+
+                    a{
+                        color: rgb(145, 145, 145);
+                    }
+                }
+
+            }
+            button{
+                width: 100%;
+                height: 40px;
+                font-family: "Lato";
+                font-weight: 600;
+                color: #fff;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+
+            .btn-purple{
+                background-color: rgb(105, 3, 109);
+            }
+            
+            .btn-orange{
+                background-color: $orange;
+                margin-bottom: 40px;
+
+                &::after{
+                    content: "OR";
+                    position: absolute;
+                    bottom: 15px;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                    color: rgb(145, 145, 145);
+                    font-size: 0.5rem;
+                    font-weight: 600;
+                }
+            }
+            
+            .btn-facebook{
+                background-color: #3b5998;
+            }
+
+            .btn-twitter{
+                background-color: #00aced;
+            }
+
+            .btn-facebook,
+            .btn-twitter{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                
+                ion-icon{
+                    margin-right: 5px;
+                }
+            }
+
+            p{
+                color: rgb(145, 145, 145);
+                font-size: 0.6rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+
+                span{
+                    padding: 0;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

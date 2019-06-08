@@ -1,0 +1,7 @@
+@mixin background-image($url, $radius) {
+    background-image: $url;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $radius;
+}
