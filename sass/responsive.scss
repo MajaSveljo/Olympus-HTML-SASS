@@ -142,6 +142,7 @@
 
                 .profile-photo{
                     position: relative;
+                    min-width: 40px;
                     width: 40px;
                     height: 40px;
 
@@ -269,42 +270,42 @@
             }
 
             div:nth-of-type(1){
-                @include background-image(url(../images/badge1.jpg), 50%);
+                @include background-image(url(./images/badge1.jpg), 50%);
                 grid-area: badge1;
             }
 
             div:nth-of-type(2){
-                @include background-image(url(../images/badge2.jpg), 50%);
+                @include background-image(url(./images/badge2.jpg), 50%);
                 grid-area: badge2;
             }
 
             div:nth-of-type(3){
-                @include background-image(url(../images/badge3.png), 50%);
+                @include background-image(url(./images/badge3.png), 50%);
                 grid-area: badge3;
             }
 
             div:nth-of-type(4){
-                @include background-image(url(../images/badge4.png), 50%);
+                @include background-image(url(./images/badge4.png), 50%);
                 grid-area: badge4;
             }
 
             div:nth-of-type(5){
-                @include background-image(url(../images/badge5.png), 50%);
+                @include background-image(url(./images/badge5.png), 50%);
                 grid-area: badge5;
             }
 
             div:nth-of-type(6){
-                @include background-image(url(../images/badge6.png), 50%);
+                @include background-image(url(./images/badge6.png), 50%);
                 grid-area: badge6;
             }
 
             div:nth-of-type(7){
-                @include background-image(url(../images/badge7.jpg), 50%);
+                @include background-image(url(./images/badge7.jpg), 50%);
                 grid-area: badge7;
             }
 
             div:nth-of-type(8){
-                @include background-image(url(../images/badge8.png), 50%);
+                @include background-image(url(./images/badge8.png), 50%);
                 grid-area: badge8;
             }
         }
@@ -514,7 +515,7 @@
                         border: none;
                         width: 22px;
                         height: 22px;
-                        background: url(../images/dot-circle-regular.svg);
+                        background: url(./images/dot-circle-regular.svg);
                         background-color: #fff;
                         background-repeat: no-repeat;
                         background-position: center;

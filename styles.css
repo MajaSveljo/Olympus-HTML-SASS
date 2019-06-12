@@ -522,7 +522,7 @@ section, .post {
       padding: 55px 0 25px;
       font-weight: 500; }
       .profile .links-container .profile-vertical div {
-        background-image: url(../../images/profile.jpg);
+        background-image: url(./images/profile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -550,7 +550,7 @@ section, .post {
     width: 50px;
     min-width: 50px;
     height: 50px;
-    background-image: url(../../images/profile.jpg);
+    background-image: url(./images/profile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -602,7 +602,7 @@ section, .post {
       margin-bottom: 15px;
       padding: 10px 15px 0; }
       .post__text .shared .post__header .profile-photo {
-        background-image: url(../../images/profile6.jpg);
+        background-image: url(./images/profile6.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -633,7 +633,7 @@ section, .post {
         position: absolute;
         top: 0;
         left: 0;
-        background-image: url(../../images/profile1.jpeg);
+        background-image: url(./images/profile1.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -643,23 +643,23 @@ section, .post {
         display: block;
         border: 2px solid #fff; }
         .post__reactions__likers span:nth-child(2) {
-          background-image: url(../../images/profile2.jpeg);
+          background-image: url(./images/profile2.jpeg);
           left: 15px;
           z-index: 1; }
         .post__reactions__likers span:nth-child(3) {
-          background-image: url(../../images/profile3.jpeg);
+          background-image: url(./images/profile3.jpeg);
           left: 30px;
           z-index: 2; }
         .post__reactions__likers span:nth-child(4) {
-          background-image: url(../../images/profile4.jpg);
+          background-image: url(./images/profile4.jpg);
           left: 45px;
           z-index: 3; }
         .post__reactions__likers span:nth-child(5) {
-          background-image: url(../../images/profile5.jpeg);
+          background-image: url(./images/profile5.jpeg);
           left: 60px;
           z-index: 4; }
         .post__reactions__likers span:nth-child(6) {
-          background-image: url(../../images/profile6.jpg);
+          background-image: url(./images/profile6.jpg);
           left: 75px;
           z-index: 5; }
     .post__reactions__heart, .post__reactions__actions {
@@ -700,7 +700,7 @@ section, .post {
       height: 26px;
       margin-left: 5px; }
   .post__photo {
-    background-image: url(../../images/cover.jpeg);
+    background-image: url(./images/cover.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -813,6 +813,7 @@ section, .post {
       width: unset; }
       .homepage-header__right .profile-horizontal .profile-photo {
         position: relative;
+        min-width: 40px;
         width: 40px;
         height: 40px; }
         .homepage-header__right .profile-horizontal .profile-photo .status {
@@ -897,56 +898,56 @@ section, .post {
         .badges-container__body div .--purple {
           background-color: #69036d; }
       .badges-container__body div:nth-of-type(1) {
-        background-image: url(../images/badge1.jpg);
+        background-image: url(./images/badge1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
         grid-area: badge1; }
       .badges-container__body div:nth-of-type(2) {
-        background-image: url(../images/badge2.jpg);
+        background-image: url(./images/badge2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
         grid-area: badge2; }
       .badges-container__body div:nth-of-type(3) {
-        background-image: url(../images/badge3.png);
+        background-image: url(./images/badge3.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
         grid-area: badge3; }
       .badges-container__body div:nth-of-type(4) {
-        background-image: url(../images/badge4.png);
+        background-image: url(./images/badge4.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
         grid-area: badge4; }
       .badges-container__body div:nth-of-type(5) {
-        background-image: url(../images/badge5.png);
+        background-image: url(./images/badge5.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
         grid-area: badge5; }
       .badges-container__body div:nth-of-type(6) {
-        background-image: url(../images/badge6.png);
+        background-image: url(./images/badge6.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
         grid-area: badge6; }
       .badges-container__body div:nth-of-type(7) {
-        background-image: url(../images/badge7.jpg);
+        background-image: url(./images/badge7.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
         grid-area: badge7; }
       .badges-container__body div:nth-of-type(8) {
-        background-image: url(../images/badge8.png);
+        background-image: url(./images/badge8.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1090,7 +1091,7 @@ section, .post {
           border: none;
           width: 22px;
           height: 22px;
-          background: url(../images/dot-circle-regular.svg);
+          background: url(./images/dot-circle-regular.svg);
           background-color: #fff;
           background-repeat: no-repeat;
           background-position: center; }
